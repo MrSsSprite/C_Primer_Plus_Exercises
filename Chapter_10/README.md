@@ -14,7 +14,7 @@
 >     int index;
 > 
 >     for (index = 0, ptr = ref; index < 4; index++, ptr++)
->         printf("%d %d\n", ref[index], *ptr);
+>         printf("%d %d/n", ref[index], *ptr);
 > 
 >     return 0;
 > }
@@ -239,7 +239,7 @@ void show2(const double ar2[][3], int n);   // n is number of rows
   using pointers instead of subscripts. (You still have to declare and 
   initialize the array.)
 
-[source code](Programming_Exercises\ex1.c)
+[source code](Programming_Exercises/ex1.c)
 
 ### Exercise 2.
 > Write a program that initializes an array-of-`double` and then copies the 
@@ -262,31 +262,31 @@ void show2(const double ar2[][3], int n);   // n is number of rows
 > copy_ptrs(target3, source, source + 5);
 > ```
 
-[source code](Programming_Exercises\ex2.c)
+[source code](Programming_Exercises/ex2.c)
 
 ### Exercise 3.
 > Write a function that returns the largest value stored in an array-of-`int`. 
   Test the function in a simple program.
 
-[source code](Programming_Exercises\ex3.c)
+[source code](Programming_Exercises/ex3.c)
 
 ### Exercise 4.
 > Write a function that returns the index of the largest value stored in an 
   array-of-`double`. Test the function in a simple program.
 
-[source code](Programming_Exercises\ex4.c)
+[source code](Programming_Exercises/ex4.c)
 
 ### Exercise 5.
 > Write a function that returns the difference between the largest and smallest 
   elements of an array-of-`double`. Test the function in a simple program.
 
-[source code](Programming_Exercises\ex5.c)
+[source code](Programming_Exercises/ex5.c)
 
 ### Exercise 6.
 > Write a function that reverses the contents of an array of `double` and test 
   it in a simple program.
 
-[source code](Programming_Exercises\ex6.c)
+[source code](Programming_Exercises/ex6.c)
 
 ### Exercise 7.
 > Write a program that initializes a two-dimensional array-of-`double` and uses 
