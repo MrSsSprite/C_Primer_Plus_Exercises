@@ -453,21 +453,21 @@ a dynamically allocated block of memory (just think of it a pointer-to-array))
   pointer. Test the function in a complete program that uses a loop to provide input 
   values for feeding to the function.
 
-[source code](Programming_Exercises/ex8.c) | [test input](test_inputs/ex8.c)
+[source code](Programming_Exercises/ex8.c) | [test input](test_inputs/ex8.txt)
 
 ### Exercise 9.
 > Write a function that replaces the contents of a string with the string reversed. Test 
   the function in a complete program that uses a loop to provide input values for feeding 
   to the function.
 
-[source code](Programming_Exercises/ex9.c) | [test input](test_inputs/ex9.c)
+[source code](Programming_Exercises/ex9.c) | [test input](test_inputs/ex9.txt)
 
 ### Exercise 10.
 > Write a function that takes a string as an argument and removes the spaces from the 
   string. Test it in a program that uses a loop to read lines until you enter an empty 
   line. The program should apply the function to each input string and display the result.
 
-[source code](Programming_Exercises/ex10.c) | [test input](test_inputs/ex10.c)
+[source code](Programming_Exercises/ex10.c) | [test input](test_inputs/ex10.txt)
 
 ### Exercise 11.
 > Write a program that reads in up to 10 strings or to `EOF`, whichever comes first. Have 
@@ -519,4 +519,4 @@ a dynamically allocated block of memory (just think of it a pointer-to-array))
 > Also, if there are no command-line arguments, let the program behave as if the `-p` 
   argument had been used.
 
-[source code](Programming_Exercises/ex16.c) | [test input(AI generated story)](test_inputs/ex16.c)
+[source code](Programming_Exercises/ex16.c) | [test input(AI generated story)](test_inputs/ex16.txt)
