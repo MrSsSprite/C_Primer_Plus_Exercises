@@ -1,0 +1,15 @@
+The printf utility formats and prints its arguments, after the first, under control of the format. The format is a character string which
+contains three types of objects: plain characters, which are simply copied to standard output, character escape sequences which are
+converted and copied to the standard output, and format specifications, each of which causes printing of the next successive argument.
+
+output
+Since the floating point numbers are translated from ASCII to floating-point and then back again, floating-point precision may be lost.
+(By default, the number is translated to an IEEE-754 double-precision value before being printed.  The L modifier may produce additional
+ precision, depending on the hardware platform.)
+
+may be l
+The strchr() function locates the first occurrence of c (converted to a char) in the string pointed to by s.  The terminating null
+character is considered to be part of the string; therefore if c is ‘\0’, the functions locate the terminating ‘\0’.
+
+float
+
