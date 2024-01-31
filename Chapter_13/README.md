@@ -81,4 +81,55 @@ the program prints every digit characters in the file to `stdout`.
   entirely of floating-point numbers. Have the program calculate and report the arithmetic 
   mean (the average) of the input numbers.
 
-[source code](Review_Questions/q4.c)
+[source code](Review_Questions/q4.c) | [test input](test_inputs/q4.txt)
+
+### Question 5.
+> Write a program that takes two command-line arguments. The first is a character, and the 
+  second is a filename. The program should print only those lines in the file containing 
+  the given character. 
+
+[source code](Review_Questions/q5.c) | [test input](test_inputs/q5.txt)
+
+### Question 6.
+> What’s the difference between binary files and text files on the one hand versus binary 
+  streams and text streams on the other? 
+
+The difference between binary files and text files is operating system dependent.
+
+The difference between binary stream and text stream is that binary stream handles the 
+data directly with no automatic translation, whereas text stream MAY include some 
+automatic translation if necessary.
+
+### Question 7.
+> a. What is the difference between saving `8238201` by using `fprintf()` and saving it 
+     by using `fwrite()` ?
+>
+> b. What is the difference between saving the character `S` by using `putc()` and saving 
+     it by using `fwrite()` ?
+
+- a. In essence, `fprintf` convert `8238201` to character code, while `fwrite` store the 
+     binary representation of the value directly. If converted to character code, it 
+     occupies more space and accordingly takes more effort to process; if saved directly 
+     as binary value, it would cost less space and faster to process. Nonetheless, the 
+     data form is not portable if saved as binary value. Different OS or even same OS 
+     with different compiler or compiler setting may alter the parsing rule of a data 
+     structure.
+- b. Basically, NO.
+
+### Question 8.
+> What’s the difference among the following?
+> ```c
+> printf("Hello, %s\n", name);
+> fprintf(stdout, "Hello, %s\n", name);
+> fprintf(stderr, "Hello, %s\n", name);
+> ```
+
+The first two statements are exactly identical, whereas the third statement is a 
+little different from them in that it is guaranteed to always output to the default 
+output stream even if the `stdout` is redirected.
+
+### Question 9.
+> The `"a+"`, `"r+"`, and `"w+"` modes all open files for both reading and writing. Which 
+  one is best for altering material already present in file?
+
+It should be `"r+"` or `"a+"` mode if you want to keep the existing content.
