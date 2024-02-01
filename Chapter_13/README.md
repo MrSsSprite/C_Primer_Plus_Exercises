@@ -133,3 +133,23 @@ output stream even if the `stdout` is redirected.
   one is best for altering material already present in file?
 
 It should be `"r+"` or `"a+"` mode if you want to keep the existing content.
+
+## Programming Exercises
+
+### Exercise 1.
+> Modify [Listing 13.1](inClass/count.c) so that it solicits the user to enter the 
+  filename and reads the user’s response instead of using command-line arguments.
+
+[source code](Programming_Exercises/ex1.c)
+
+### Exercise 2.
+> Write a file-copy program that takes the original filename and the copy file from the 
+  command line. Use standard I/O and the binary mode, if possible.
+
+[source code](Programming_Exercises/ex2.c)
+
+### Exercise 3.
+> Write a file copy program that prompts the user to enter the name of a text file to act 
+  as the source file and the name of an output file. The program should use the 
+  `toupper()` function from `ctype.h` to convert all text to uppercase as it’s written to 
+  the output file. Use standard I/O and the text mode. 
