@@ -153,3 +153,55 @@ It should be `"r+"` or `"a+"` mode if you want to keep the existing content.
   as the source file and the name of an output file. The program should use the 
   `toupper()` function from `ctype.h` to convert all text to uppercase as it’s written to 
   the output file. Use standard I/O and the text mode. 
+
+[source code](Programming_Exercises/ex3.c)
+
+### Exercise 4.
+> Write a program that sequentially displays onscreen all the files listed in the command 
+  line. Use argc to control a loop. 
+
+[source code](Programming_Exercises/ex4.c)
+
+### Exercise 5.
+> Modify the program in [Listing 13.5](inClass/append.c) so that it uses a command-line 
+  interface instead of an interactive interface.
+
+[source code](Programming_Exercises/ex5.c)
+
+### Exercise 6.
+> Programs using command-line arguments rely on the user’s memory of how to use them 
+  correctly. Rewrite the program in [Listing 13.2](inClass/reducto.c) so that, instead of 
+  using command-line arguments, it prompts the user for the required information.
+
+[source code](Programming_Exercises/ex6.c)
+
+### Exercise 7.
+> Write a program that opens two files. You can obtain the filenames either by using 
+  command-line arguments or by soliciting the user to enter them.
+>> a. Have the program print line 1 of the first file, line 1 of the second file, line 2 
+      of the first file, line 2 of the second file, and so on, until the last line of the 
+      longer file (in terms of lines) is printed.
+>>
+>> b. Modify the program so that lines with the same line number are printed on the same 
+      line.
+
+[source code](Programming_Exercises/ex7.c)
+
+### Exercise 8.
+> Write a program that takes as command-line arguments a character and zero or more 
+  filenames. If no arguments follow the character, have the program read the standard 
+  input. Otherwise, have it open each file in turn and report how many times the character 
+  appears in each file. The filename and the character itself should be reported along 
+  with the count. Include error-checking to see whether the number of arguments is correct 
+  and whether the files can be opened. If a file can’t be opened, have the program report 
+  that fact and go on to the next file. 
+
+[source code](Programming_Exercises/ex8.c) | [helper functions](Programming_Exercises/ex8_impl.c)
+
+### Exercise 9.
+> Modify the program in [Listing 13.3](inClass/addaword.c) so that each word is numbered 
+  according to the order in which it was added to the list, starting with 1. Make sure 
+  that, when the program is run a second time, new word numbering resumes where the 
+  previous numbering left off.
+
+[source code](Programming_Exercises/ex9.c)
