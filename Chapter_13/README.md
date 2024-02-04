@@ -205,3 +205,34 @@ It should be `"r+"` or `"a+"` mode if you want to keep the existing content.
   previous numbering left off.
 
 [source code](Programming_Exercises/ex9.c)
+
+### Exercise 10.
+> Write a program that opens a text file whose name is obtained interactively. Set up a 
+  loop that asks the user to enter a file position. The program then should print the part 
+  of the file starting at that position and proceed to the next newline character. Let 
+  negative or nonnumeric input terminate the user-input loop.
+
+[source code](Programming_Exercises/ex10.c)
+
+### Exercise 11.
+> Write a program that takes two command-line arguments. The first is a string; the second 
+  is the name of a file. The program should then search the file, printing all lines 
+  containing the string. Because this task is line oriented rather than character 
+  oriented, use `fgets()` instead of `getc().` Use the standard C library function 
+  `strstr()` (briefly described in exercise 7 of Chapter 11 ) to search each line for the 
+  string. Assume no lines are longer than 255 characters.
+
+[source code](Programming_Exercises/ex11.c)
+
+### Exercise 12.
+> Create a text file consisting of 20 rows of 30 integers. The integers should be in the 
+  range 0–9 and be separated by spaces. The file is a digital representation of a picture, 
+  with the values 0 through 9 representing increasing levels of darkness. Write a program 
+  that reads the contents of the file into a 20-by-30 array of ints. In a crude approach 
+  toward converting this digital representation to a picture, have the program use the 
+  values in this array to initialize a 20-by-31 array of chars, with a 0 value 
+  corresponding to a space character, a 1 value to the period character, and so on, with 
+  each larger number represented by a character that occupies more space. For example, you 
+  might use # to represent 9. The last character (the 31st) in each row should be a null 
+  character, making it an array of 20 strings. Have the program display the resulting 
+  picture (that is, print the strings) and also store the result in a text file.
